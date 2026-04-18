@@ -45,16 +45,16 @@ const dishes = [
 
 const galleryPreviews = [
   {
-    src: "/gallery/619659632_17947828938090877_2166249858373438495_n.jpg",
-    alt: "Elk Ave Tavern warm interior dining",
+    src: "/gallery/623294470_17948458893090877_3342193539966754514_n.jpg",
+    alt: "Double burger with fries at Elk Ave Tavern — best burger in the Charlotte metro",
   },
   {
-    src: "/gallery/590387755_17947242864090877_8163397717376841853_n.jpg",
-    alt: "Food and drinks at Elk Ave Tavern Rock Hill",
+    src: "/gallery/621567946_17948008656090877_768608983113603717_n.jpg",
+    alt: "Stout Braised Beef Melt sandwich with caesar salad at Elk Ave Tavern",
   },
   {
     src: "/gallery/618483075_17947340820090877_6947416961864051979_n.jpg",
-    alt: "Craft cocktails at Elk Ave Tavern",
+    alt: "Fried chicken sandwich at Elk Ave Tavern Rock Hill",
   },
 ];
 

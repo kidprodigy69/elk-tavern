@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -17,13 +17,6 @@ const links = [
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   return (
     <>
@@ -31,19 +24,15 @@ export default function Nav() {
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
-          scrolled
-            ? "bg-[#0F0F0D]/95 backdrop-blur-md border-b border-[#C8963E]/20 py-3"
-            : "bg-transparent py-5"
-        }`}
+        className="fixed top-0 left-0 right-0 z-40 bg-[#0F0F0D]/95 backdrop-blur-md border-b border-[#C8963E]/20 py-3"
       >
         <div className="max-w-7xl mx-auto px-5 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="/logo/430483829_421045087259831_2239488633024398494_n.jpg"
               alt="Elk Ave Tavern logo"
-              width={52}
-              height={52}
+              width={48}
+              height={48}
               className="rounded-full border border-[#C8963E]/40"
             />
             <span
@@ -66,7 +55,7 @@ export default function Nav() {
               </Link>
             ))}
             <a
-              href="tel:[Add phone]"
+              href="tel:+18034190000"
               className="ml-4 px-5 py-2.5 border border-[#C8963E] text-[#C8963E] font-body text-xs tracking-widest uppercase hover:bg-[#C8963E] hover:text-[#0F0F0D] transition-all duration-300"
             >
               Call Us
@@ -137,7 +126,7 @@ export default function Nav() {
               </nav>
               <div className="p-6 border-t border-[#C8963E]/20">
                 <a
-                  href="tel:[Add phone]"
+                  href="tel:+18034190000"
                   className="block w-full text-center py-3.5 bg-[#C8963E] text-[#0F0F0D] font-body font-semibold text-sm tracking-widest uppercase"
                 >
                   Call Us Today

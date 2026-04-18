@@ -84,11 +84,11 @@ export default function ContactPage() {
                 <div>
                   <p className="font-body font-semibold text-[#1A1917] text-sm tracking-wider uppercase mb-1">Location</p>
                   <p className="font-body text-[#1A1917]/65 text-base leading-relaxed">
-                    Downtown Rock Hill, SC<br />
-                    (formerly Sweet Tea Cafe)
+                    125 Elk Avenue<br />
+                    Rock Hill, South Carolina 29730
                   </p>
                   <a
-                    href="https://www.google.com/maps/search/Elk+Ave+Tavern+Rock+Hill+SC"
+                    href="https://www.google.com/maps/search/125+Elk+Avenue+Rock+Hill+SC+29730"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-[#C8963E] text-sm mt-2 hover:text-[#9A6F28] transition-colors"
@@ -147,7 +147,7 @@ export default function ContactPage() {
             {/* Map */}
             <div className="mt-10 overflow-hidden border border-[#E8D9BE] h-60">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.123456789012!2d-81.02456!3d34.92456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88569b4d4fbaaaab%3A0xb4c7e8d8cbfb1234!2sElk%20Ave%20Tavern!5e0!3m2!1sen!2sus!4v1234567890"
+                src="https://www.google.com/maps?q=125+Elk+Avenue,+Rock+Hill,+SC+29730&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

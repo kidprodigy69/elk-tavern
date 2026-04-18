@@ -37,8 +37,8 @@ export default function ContactTeaser() {
               <div>
                 <p className="font-body font-medium text-[#F5E9D5] text-sm">Location</p>
                 <p className="font-body text-[#F5E9D5]/60 text-sm mt-1">
-                  Downtown Rock Hill, SC<br />
-                  (in the former Sweet Tea Cafe space)
+                  125 Elk Avenue<br />
+                  Rock Hill, South Carolina 29730
                 </p>
               </div>
             </div>
@@ -88,7 +88,7 @@ export default function ContactTeaser() {
         >
           <div className="relative overflow-hidden border border-[#C8963E]/20 h-72">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.123456789012!2d-81.02456!3d34.92456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88569b4d4fbaaaab%3A0xb4c7e8d8cbfb1234!2sElk%20Ave%20Tavern!5e0!3m2!1sen!2sus!4v1234567890"
+              src="https://www.google.com/maps?q=125+Elk+Avenue,+Rock+Hill,+SC+29730&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) saturate(0.4)" }}

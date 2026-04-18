@@ -59,9 +59,10 @@ const jsonLd = {
   telephone: "[Add phone]",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Downtown Rock Hill",
+    streetAddress: "125 Elk Avenue",
     addressLocality: "Rock Hill",
     addressRegion: "SC",
+    postalCode: "29730",
     addressCountry: "US",
   },
   aggregateRating: {

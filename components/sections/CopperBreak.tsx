@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function CopperBreak() {
   return (
-    <section className="relative bg-[#C8963E] py-20 md:py-24 overflow-hidden diagonal-both">
-      {/* Texture overlay */}
+    <section className="relative bg-[#C8963E] py-20 md:py-24 overflow-hidden">
+      {/* Subtle texture */}
       <div
         className="absolute inset-0 opacity-10"
         style={{
@@ -45,7 +45,7 @@ export default function CopperBreak() {
             THE KITCHEN&apos;S AMBITION.
           </h2>
           <p className="font-body text-[#0F0F0D]/70 text-lg max-w-2xl mx-auto mb-10">
-            Banana Bread Old Fashioned. Espresso Martini. Craft beers on draft.
+            Pecan Old Fashioned. Espresso Martini. Craft beers on draft.
             The cocktail program here isn&apos;t an afterthought — it&apos;s a destination.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -53,13 +53,13 @@ export default function CopperBreak() {
               href="/menu#cocktails"
               className="px-8 py-4 bg-[#0F0F0D] text-[#C8963E] font-body font-semibold text-sm tracking-widest uppercase hover:bg-[#1A1917] transition-all duration-300"
             >
-              Cocktail Menu
+              House Cocktails
             </Link>
             <Link
               href="/menu#beer"
               className="px-8 py-4 border-2 border-[#0F0F0D]/50 text-[#0F0F0D] font-body font-semibold text-sm tracking-widest uppercase hover:border-[#0F0F0D] transition-all duration-300"
             >
-              Beer Selection
+              Draft Beer
             </Link>
           </div>
         </motion.div>

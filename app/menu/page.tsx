@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 type Category = {
@@ -140,7 +140,14 @@ const categories: Category[] = [
 
 export default function MenuPage() {
   const [active, setActive] = useState("shareplates");
-  const currentCat = categories.find((c) => c.id === active)!;
+  const currentCat = categories.find((c) => c.id === active)!
+
+  useEffect(() => {
+    const hash = window.location.hash.replace("#", "");
+    if (hash && categories.find((c) => c.id === hash)) {
+      setActive(hash);
+    }
+  }, []);;
 
   return (
     <div className="bg-[#0F0F0D] min-h-screen pt-24">

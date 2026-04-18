@@ -175,7 +175,7 @@ export default function AboutPage() {
       </section>
 
       {/* Philosophy strip */}
-      <section className="bg-[#C8963E] py-16 diagonal-both">
+      <section className="bg-[#C8963E] py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

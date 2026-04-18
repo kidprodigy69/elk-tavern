@@ -94,7 +94,8 @@ export default function Footer() {
               Find Us
             </p>
             <address className="not-italic text-sm leading-relaxed">
-              Downtown Rock Hill, SC
+              125 Elk Avenue<br />
+              Rock Hill, SC 29730
             </address>
             <div className="mt-4 flex flex-col gap-2">
               <a

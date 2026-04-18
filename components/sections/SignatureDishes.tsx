@@ -53,8 +53,8 @@ const galleryPreviews = [
     alt: "Stout Braised Beef Melt sandwich with caesar salad at Elk Ave Tavern",
   },
   {
-    src: "/gallery/618483075_17947340820090877_6947416961864051979_n.jpg",
-    alt: "Fried chicken sandwich at Elk Ave Tavern Rock Hill",
+    src: "/gallery/628433043_17949470670090877_4052471914335268470_n.jpg",
+    alt: "Hot honey pepperoni pizza at Elk Ave Tavern Rock Hill",
   },
 ];
 

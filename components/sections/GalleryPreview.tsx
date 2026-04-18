@@ -8,7 +8,7 @@ const photos = [
   { src: "/gallery/590387755_17947242864090877_8163397717376841853_n.jpg", alt: "Elk Ave Tavern food and ambiance" },
   { src: "/gallery/612994072_17946444807090877_3847243999128966981_n.jpg", alt: "Bar and drinks at Elk Ave Tavern" },
   { src: "/gallery/616082465_17947003206090877_2725069109956164394_n.jpg", alt: "Interior dining room of Elk Ave Tavern" },
-  { src: "/gallery/618483075_17947340820090877_6947416961864051979_n.jpg", alt: "Craft cocktails at Elk Ave Tavern Rock Hill" },
+  { src: "/gallery/618483075_17947340820090877_6947416961864051979_n.jpg", alt: "Fried chicken sandwich at Elk Ave Tavern Rock Hill" },
   { src: "/gallery/612167852_17946255579090877_5151559941126121164_n.jpg", alt: "Signature dishes at Elk Ave Tavern" },
   { src: "/gallery/628433043_17949470670090877_4052471914335268470_n.jpg", alt: "Food from Elk Ave Tavern Rock Hill SC" },
 ];

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { MapPin, Clock, ExternalLink } from "lucide-react";
 import { InstagramIcon, FacebookIcon } from "@/components/icons/SocialIcons";
-import { supabase } from "@/lib/supabase";
+import { getSupabase } from "@/lib/supabase";
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
@@ -16,7 +16,9 @@ export default function ContactPage() {
     e.preventDefault();
     setStatus("submitting");
     try {
-      const { error } = await supabase.from("contact_submissions").insert([
+      const db = getSupabase();
+      if (!db) throw new Error("Database not configured");
+      const { error } = await db.from("contact_submissions").insert([
         { ...form, submitted_at: new Date().toISOString() },
       ]);
       if (error) throw error;

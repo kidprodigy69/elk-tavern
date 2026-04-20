@@ -86,7 +86,7 @@ export default function ReviewsSection() {
             </h2>
           </div>
           <a
-            href="https://www.google.com/maps/search/Elk+Ave+Tavern+Rock+Hill"
+            href="https://www.google.com/search?sca_esv=aae6e3c89fbb1a52&rlz=1C5CHFA_enUS953US953&sxsrf=ANbL-n5oNLOyzvJNOHO-ViJfPw8DJWZJWg:1776650470016&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOXgo8bNAVDQf7wHT8H5A4-wTHMxK4TKbGrgNtY6zIFz4z_fj5sfIcYaJe_AmSb3y697rGqNrejPQ6FF3qu8CPR10NHn1&q=Elk+Ave+Tavern+Reviews&sa=X&ved=2ahUKEwjG5Z7hqvuTAxUC_8kDHX_JOlcQ0bkNegQIQxAF&biw=1920&bih=958&dpr=1#lrd=0x8856890006e73c1f:0x95025a7bfd0a080,3,,,,"
             target="_blank"
             rel="noopener noreferrer"
             className="self-start md:self-end font-body text-sm tracking-widest uppercase text-[#C8963E] border-b border-[#C8963E]/50 pb-1 hover:border-[#C8963E] transition-all"

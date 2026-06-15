@@ -18,7 +18,7 @@ export default function ContactPage() {
     try {
       const db = getSupabase();
       if (!db) throw new Error("Database not configured");
-      const { error } = await db.from("contact_submissions").insert([
+      const { error } = await db.from("elk_tavern_contact_submissions").insert([
         { ...form, submitted_at: new Date().toISOString() },
       ]);
       if (error) throw error;

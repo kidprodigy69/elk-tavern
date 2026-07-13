@@ -25,7 +25,7 @@ export default function EditorialStatement() {
           <video
             ref={videoRef}
             className="absolute inset-0 h-full w-full object-cover"
-            src="/generated/burger-smash-final.mp4"
+            src="/generated/burger-smash-full.mp4"
             muted
             playsInline
             preload="auto"

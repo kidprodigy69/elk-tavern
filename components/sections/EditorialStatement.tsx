@@ -2,7 +2,8 @@
 
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { useRef } from "react";
-import { motion } from "framer-motion";
+
+const SCRUB_FRACTION = 0.35;
 
 export default function EditorialStatement() {
   const ref = useRef<HTMLDivElement>(null);
@@ -12,39 +13,38 @@ export default function EditorialStatement() {
   useMotionValueEvent(scrollYProgress, "change", (progress) => {
     const video = videoRef.current;
     if (video && video.duration) {
-      video.currentTime = progress * video.duration;
+      const videoProgress = Math.min(progress / SCRUB_FRACTION, 1);
+      video.currentTime = videoProgress * video.duration;
     }
   });
 
   return (
-    <section
-      ref={ref}
-      className="relative bg-[#F5E9D5] min-h-[150vh]"
-    >
-      <div className="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center">
-        <video
-          ref={videoRef}
-          className="absolute inset-0 h-full w-full object-cover"
-          src="/generated/burger-smash.mp4"
-          muted
-          playsInline
-          preload="auto"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#F5E9D5]/10 via-transparent to-[#F5E9D5]/10" />
+    <>
+      <section ref={ref} className="relative bg-[#F5E9D5] min-h-[280vh]">
+        <div className="sticky top-0 h-screen w-full overflow-hidden">
+          <video
+            ref={videoRef}
+            className="absolute inset-0 h-full w-full object-cover"
+            src="/generated/burger-smash-final.mp4"
+            muted
+            playsInline
+            preload="auto"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#F5E9D5]/10 via-transparent to-[#F5E9D5]/10" />
+        </div>
+      </section>
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="relative z-10 max-w-2xl mx-auto px-6 text-center"
+      <section className="relative bg-[#F5E9D5] py-20 md:py-28 text-center px-6">
+        <h2
+          className="font-black text-[#1A1917] leading-tight max-w-4xl mx-auto"
+          style={{
+            fontFamily: "'Playfair Display', serif",
+            fontSize: "clamp(2rem, 5.5vw, 4.25rem)",
+          }}
         >
-          <p className="font-body text-[#1A1917]/80 text-lg leading-relaxed bg-[#F5E9D5]/85 backdrop-blur-sm rounded-lg px-6 py-4">
-            From the legendary Cibi Cibi food truck to a permanent home in the heart of downtown —
-            Elk Ave Tavern is where Rock Hill comes to eat, drink, and belong.
-          </p>
-        </motion.div>
-      </div>
-    </section>
+          Homegrown in the heart of Rock Hill.
+        </h2>
+      </section>
+    </>
   );
 }

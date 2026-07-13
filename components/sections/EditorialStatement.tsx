@@ -3,7 +3,7 @@
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { useRef } from "react";
 
-const SCRUB_FRACTION = 0.35;
+const SCRUB_FRACTION = 0.5;
 
 export default function EditorialStatement() {
   const ref = useRef<HTMLDivElement>(null);
@@ -20,7 +20,7 @@ export default function EditorialStatement() {
 
   return (
     <>
-      <section ref={ref} className="relative bg-[#F5E9D5] min-h-[280vh]">
+      <section ref={ref} className="relative bg-[#F5E9D5] min-h-[160vh]">
         <div className="sticky top-0 h-screen w-full overflow-hidden">
           <video
             ref={videoRef}

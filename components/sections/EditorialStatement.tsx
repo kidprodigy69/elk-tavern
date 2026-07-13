@@ -3,8 +3,6 @@
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { useRef } from "react";
 
-const SCRUB_FRACTION = 0.5;
-
 export default function EditorialStatement() {
   const ref = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -13,8 +11,7 @@ export default function EditorialStatement() {
   useMotionValueEvent(scrollYProgress, "change", (progress) => {
     const video = videoRef.current;
     if (video && video.duration) {
-      const videoProgress = Math.min(progress / SCRUB_FRACTION, 1);
-      video.currentTime = videoProgress * video.duration;
+      video.currentTime = progress * video.duration;
     }
   });
 
